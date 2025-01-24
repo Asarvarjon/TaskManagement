@@ -1,5 +1,4 @@
-const cds = require("@sap/cds");
-const { message } = require("@sap/cds/lib/log/cds-error");
+const cds = require("@sap/cds"); 
 
 module.exports = cds.service.impl(async function() {
     this.before("CREATE", "Tasks", (req) => {
@@ -28,5 +27,16 @@ module.exports = cds.service.impl(async function() {
         await UPDATE("Tasks").set({status: "Finished"}).where({ID})
 
         return { success: true, message: 'Task marked as complete.' };
+    })
+
+
+    this.before("DELETE", "Tasks", async(req) => {
+        const { ID } = req.data;
+
+        const hasComments = await SELECT.one.from('Comments').where({task_ID: ID});
+
+        if(hasComments) {
+            req.warn(400, 'Task has comments and will be deleted with them')
+        }
     })
 })

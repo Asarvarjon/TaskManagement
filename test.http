@@ -30,5 +30,19 @@ Content-Type: application/json
 }
 
 ### Delete a Task
-DELETE http://localhost:4004/TaskService/Tasks/e30f434e-1d88-497d-8f76-3f9d401e8cf1
+DELETE http://localhost:4004/odata/v4/task/Tasks/e30f434e-1d88-497d-8f76-3f9d401e8cf1
 Content-Type: application/json
+
+
+
+
+// comments
+### Create a New Comment
+POST http://localhost:4004/odata/v4/comments/Comments
+Content-Type: application/json
+
+{
+    "content": "This is a sample comment for the task.",
+    "task_ID": "b2c5d6b8-72b1-4f6d-9e18-2b7a1e7082f1", 
+    "author_ID": "b2c5d6b8-72b1-4f6d-9e18-2b7a1e7082f1"  
+}
