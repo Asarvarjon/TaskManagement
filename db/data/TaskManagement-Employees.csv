@@ -1,0 +1,6 @@
+ID,name,email,password,role,createdAt,createdBy,modifiedAt,modifiedBy
+1f5d70f5-bc79-4f76-b0c9-28d4780f1a1f,Sarvarjon Amriyev,sarvarjon@gmail.com,password123,Director,2025-01-01T10:00:00Z,admin,2025-01-01T10:00:00Z,admin
+a1a84577-f1e3-453b-9397-c1e9e60bd576,Jane Smith,jane.smith@example.com,password123,Employee,2025-01-01T11:00:00Z,admin,2025-01-01T11:00:00Z,admin
+bcb7f3b6-c9e1-4f3c-9213-d5a74142c231,Bob Johnson,bob.johnson@example.com,password123,Employee,2025-01-01T12:00:00Z,admin,2025-01-01T12:00:00Z,admin
+16f746d1-1d72-4652-8898-dff56516e092,Alice Brown,alice.brown@example.com,password123,Director,2025-01-01T13:00:00Z,admin,2025-01-01T13:00:00Z,admin
+f05d63d2-479b-4777-9e1c-79ab06c57455,Michael Lee,michael.lee@example.com,password123,Employee,2025-01-01T14:00:00Z,admin,2025-01-01T14:00:00Z,admin

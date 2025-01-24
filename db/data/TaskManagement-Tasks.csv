@@ -1,0 +1,6 @@
+ID,title,description,status,priority,deadline,assigned_to_ID,assinged_by_ID,createdAt,createdBy,modifiedAt,modifiedBy
+e30f434e-1d88-497d-8f76-3f9d401e8cf1,Complete Report,Prepare the annual report,Assigned,High,2025-01-15T17:00:00Z,a1a84577-f1e3-453b-9397-c1e9e60bd576,1f5d70f5-bc79-4f76-b0c9-28d4780f1a1f,2025-01-01T10:00:00Z,admin,2025-01-01T10:00:00Z,admin
+b2c5d6b8-72b1-4f6d-9e18-2b7a1e7082f1,Develop Feature X,Implement new product feature,Started,Medium,2025-01-20T12:00:00Z,bcb7f3b6-c9e1-4f3c-9213-d5a74142c231,1f5d70f5-bc79-4f76-b0c9-28d4780f1a1f,2025-01-01T11:00:00Z,admin,2025-01-01T11:00:00Z,admin
+c7d16e89-f78e-4db6-a29b-68f71785e4d6,Fix Bug #123,Resolve the critical issue,Finished,Critical,2025-01-10T09:00:00Z,f05d63d2-479b-4777-9e1c-79ab06c57455,a1a84577-f1e3-453b-9397-c1e9e60bd576,2025-01-01T12:00:00Z,admin,2025-01-01T12:00:00Z,admin
+d3a4e6c1-5a98-4c85-a4fb-548e62a1d9d1,Client Meeting,Prepare presentation for meeting,Aborted,Low,2025-01-25T15:00:00Z,a1a84577-f1e3-453b-9397-c1e9e60bd576,16f746d1-1d72-4652-8898-dff56516e092,2025-01-01T13:00:00Z,admin,2025-01-01T13:00:00Z,admin
+e6b4a3f7-c22f-4963-bc2e-dfda6311a1f3,Team Training,Organize team training session,Assigned,Medium,2025-01-30T10:00:00Z,bcb7f3b6-c9e1-4f3c-9213-d5a74142c231,1f5d70f5-bc79-4f76-b0c9-28d4780f1a1f,2025-01-01T14:00:00Z,admin,2025-01-01T14:00:00Z,admin

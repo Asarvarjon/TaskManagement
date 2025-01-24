@@ -1,0 +1,34 @@
+### Create a Task
+POST http://localhost:4004/odata/v4/task/Tasks
+Content-Type: application/json
+
+{
+  "title": "Prepare Presentation",
+  "description": "Create slides for the client meeting",
+  "status": "Assigned",
+  "priority": "High",
+  "deadline": "2024-02-01T10:00:00Z",
+  "assigned_to_ID": "a1a84577-f1e3-453b-9397-c1e9e60bd576",
+  "assinged_by_ID": "1f5d70f5-bc79-4f76-b0c9-28d4780f1a1f"
+}
+
+### Fetch All Tasks
+GET http://localhost:4004/TaskService/Tasks
+Content-Type: application/json
+
+### Fetch a Single Task by ID
+GET http://localhost:4004/TaskService/Tasks/e30f434e-1d88-497d-8f76-3f9d401e8cf1
+Content-Type: application/json
+
+### Update a Task
+PATCH http://localhost:4004/TaskService/Tasks/e30f434e-1d88-497d-8f76-3f9d401e8cf1
+Content-Type: application/json
+
+{
+  "status": "Finished",
+  "priority": "Critical"
+}
+
+### Delete a Task
+DELETE http://localhost:4004/TaskService/Tasks/e30f434e-1d88-497d-8f76-3f9d401e8cf1
+Content-Type: application/json
