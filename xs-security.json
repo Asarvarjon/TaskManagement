@@ -1,6 +1,35 @@
 {
-  "scopes": [],
+  "xsappname": "task-management-app",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Task.View",
+      "description": "View tasks",
+      "grant-as-authority-to-apps": ["$XSAPPNAME"]
+    },
+    {
+      "name": "$XSAPPNAME.Task.Manage",
+      "description": "Manage tasks",
+      "grant-as-authority-to-apps": ["$XSAPPNAME"]
+    }
+  ],
   "attributes": [],
-  "role-templates": [],
+  "role-templates": [
+    {
+      "name": "Viewer",
+      "description": "Role for viewing tasks",
+      "scope-references": [
+        "$XSAPPNAME.Task.View"
+      ]
+    },
+    {
+      "name": "Manager",
+      "description": "Role for managing tasks",
+      "scope-references": [
+        "$XSAPPNAME.Task.View",
+        "$XSAPPNAME.Task.Manage"
+      ]
+    }
+  ],
   "authorities-inheritance": false
 }
