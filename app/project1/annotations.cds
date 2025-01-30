@@ -1,0 +1,1 @@
+using CommentsService as service from '../../srv/comments-service';

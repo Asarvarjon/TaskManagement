@@ -48,7 +48,15 @@
       },
       "connectivity": true,
       "destinations": true,
-      "db": "sqlite"
+      "db": "sqlite",
+      "[production]": {
+        "db": {
+          "kind": "hana"
+        },
+        "auth": {
+          "kind": "xsuaa"
+        }
+      }
     },
     "sql": {
       "native_hana_associations": false
